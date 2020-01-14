@@ -2,6 +2,9 @@ Applied AI with Deep Learning
 ------------------------------
 
 
+i)  https://dataplatform.cloud.ibm.com
+ii) https://cloud.ibm.com/
+
 1) https://github.com/IBM/coursera/wiki/Environment-Setup
 2) https://github.com/IBM/coursera/tree/master/coursera_ai
 3) https://github.com/IBM/coursera/blob/master/coursera_ai/week1/
