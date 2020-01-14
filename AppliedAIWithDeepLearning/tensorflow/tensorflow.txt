@@ -1,0 +1,1 @@
+https://www.easy-tensorflow.com/tf-tutorials/basics/graph-and-session

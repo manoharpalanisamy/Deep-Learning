@@ -1,0 +1,105 @@
+Applied AI with Deep Learning
+------------------------------
+
+
+1) https://github.com/IBM/coursera/wiki/Environment-Setup
+2) https://github.com/IBM/coursera/tree/master/coursera_ai
+3) https://github.com/IBM/coursera/blob/master/coursera_ai/week1/
+
+
+Important
+----------
+
+Gradient descent doesn't guarantee to converge in neural network beacause its a convex function always find global minimum in linear regression whereas neural network as lot of local minimum(Non convex) 
+So if we chose Gradient descent in neural network go ahead with hyperparameter tuning
+
+
+
+DeepLearning Fundamentals
+------------------------------
+Total points 7
+
+1.Question 1
+
+What is an example of a vector-vector multiplication?
+
+2*3=6
+
+(1,2,3) * (4,5,6) = (4,10,18)
+
+(1,2,3) * (4,5,6) = 23
+
+(1,2,3) * (4,5,6) = 32
+
+
+2.Question 2
+
+Which equation is correct give the following vectors?
+
+Note: The "%*%" symbol is used to denote the "dot product"
+
+w = (0.3,0.5,0.7)
+
+x = (3,5,7)
+
+w %*% x = 0.3 * 3 + 0.5 * 5 + 0.7 * 7
+
+w %*% x = 0.3 + 3 * 0.5 + 5 * 0.7 + 7
+
+
+3.Question 3
+
+Please use this wikipedia article to answer the following question:
+
+For which task an LSTM Neural Network is best suited?
+
+Image Classification
+
+Time-series analysis
+
+Any type of sequence processing including Text and DNA
+
+
+4.Question 4
+
+To train an auto-encoder, what data is shown to the neural network on the right hand side?
+
+X - The same data as on the left hand side
+
+y - The actual labeled data
+
+
+5.Question 5
+
+Which dimension reduction technique is limited because it provides only a linear transformation of the data?
+
+PCA - Principal Component Analysis
+
+t-SNE - the t-distributed stochastic neighbor embedding
+
+Deep Neural Network Auto Encoder
+
+
+6.Question 6
+
+Which optimization technique is the most commonly used for Neural Network training?
+
+Gradient Descent
+
+Montecarlo
+
+Grid Search
+
+
+7.Question 7
+
+What are examples of a one-hot encoded vector?
+
+Reference:
+
+https://en.wikipedia.org/wiki/One-hot
+
+(0,0,0,0,0,0,1,0,0,0)
+
+(1,0,0,0,0,0,1,0,0,0)
+
