@@ -106,3 +106,134 @@ https://en.wikipedia.org/wiki/One-hot
 
 (1,0,0,0,0,0,1,0,0,0)
 
+
+
+
+
+
+TensorFlow
+Total points 6
+
+1.Question 1
+
+Which statement is correct?
+
+TensorFlow is a high-level DeepLearning library allowing you to define only Neural Network layers
+
+TensorFlow is a library for arbitrary numerical computation not limited to DeepLearning only
+1 point
+
+2.Question 2
+
+What is a TensorFlow placeholder?
+
+A TensorFlow program expressed as execution graph which can be run by the TensorFlow engine at a later stage
+
+A way to add data to the TensorFlow execution graph at a later stage
+1 point
+
+3.Question 3
+
+What data is usually stored in a TensorFlow variable?
+
+The weight matrix W
+
+Training data X
+
+Label data y
+1 point
+
+4.Question 4
+
+What statements are correct in respect to a unhealthy value distribution (histogram) of values in the weight matrix?
+
+A uniform distribution indicates a lack of parameter updates and therefore problems with training
+
+Values at the far end of the spectrum are indicating over-saturation of the weight matrix
+
+Most of the values centered very close to zero forces gradients to become very small
+1 point
+
+5.Question 5
+
+What is the relationship between accuracy and loss in a healthy and working neural network?
+
+Both values should behave inverse during neural network training
+
+accuracy and loss are basically the same measure, so they should behave identically
+1 point
+
+6.Question 6
+
+Which statements about automatic differentiation in TensorFlow are correct?
+
+Every operator in TensorFlow has registered the first derivative of it's operation as well. Therefore TensorFlow can apply the chain rule of automatic differentiation in order to compute the 1st derivative of any complex function
+
+TensorFlow has a auto differentiation engine which is capable of can find out the 1st derivative of every atomic operation without being provided.
+1 point
+
+
+----------------------------------------
+
+
+Keras
+-------
+
+What is the default backend of keras?
+
+ans: Tensorflow
+Theano
+CNTK
+
+
+
+Which layers should have an input_shape argument in an MLP?
+
+Every single layer in our model
+ans: Just the first layer
+It depends on the layers
+
+
+
+form keras.optimizer import SGD
+
+sgd = SGD(lr= 0.01, decay= 1e-06, momentum= 0.9)
+model.compile(loss=..., optimizer= sgd)
+
+
+decay - decrease the learning rate factor after each parameter 
+
+
+
+SystemML
+---------
+
+
+How to perform a matrix multiplication X and Y in DML ?
+
+X.dot(Y)
+
+X * Y
+
+X %*% Y
+Correct 
+
+Correct answer. DML follows R-syntax for matrix multiplication.
+
+
+
+
+Which of the following statements is true ?
+
+SystemML provides an API called MLContext (in Scala, Java, and Python), that allows the user to register RDDs and DataFrames (previously created through Spark SQL or other libraries) as input and output variables of a DML script.
+Correct 
+is selected.This is correct.
+
+Linear Regression DML script needs to be modified to run on Spark as it doesnot contain a reference to RDD.
+
+
+The results of Linear Regression DML script may differ significantly over the same input data on different execution backend (such as Spark, Hadoop).
+
+
+SystemML allows for algorithm reusability across data-parallel frameworks (such as Hadoop, Spark) and simplified deployment for varying data characteristics and runtime environments.
+Correct 
