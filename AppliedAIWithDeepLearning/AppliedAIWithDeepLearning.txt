@@ -8,6 +8,8 @@ ii) https://cloud.ibm.com/
 1) https://github.com/IBM/coursera/wiki/Environment-Setup
 2) https://github.com/IBM/coursera/tree/master/coursera_ai
 3) https://github.com/IBM/coursera/blob/master/coursera_ai/week1/
+4) https://github.com/SkymindIO/dsx  (DL4J)
+5) https://github.com/IBM/coursera/tree/master/coursera_ai/week2 (PyTorch)
 
 
 Important
@@ -237,3 +239,168 @@ The results of Linear Regression DML script may differ significantly over the sa
 
 SystemML allows for algorithm reusability across data-parallel frameworks (such as Hadoop, Spark) and simplified deployment for varying data characteristics and runtime environments.
 Correct 
+
+
+DeepLearning4j
+--------------
+
+What tools allow for extracting Label from the File Path
+
+PathLabelgenerator
+Correct 
+is selected.This is correct.
+
+ParentPathLabelGenerator
+Correct 
+is selected.This is correct.
+
+SequenceReader
+
+RecordReaderDataSetiterator
+
+
+
+
+
+What RecordReader class would be used to read Comma Separated Values from a Text File
+
+JacksonRecorReader
+
+CSVRecordReader
+Correct 
+
+ParentPathLabelGenerator
+
+
+
+The java code that is executed in this example is packaged in a jar file. In order for the code to execute what else is needed in that jar besides our target class?
+
+Spark, in order to run the code we must use Spark
+
+Scala, in order to run on DSX using notebooks Scala is required
+
+Dependencies, the jar must include dependencies
+Correct 
+
+
+
+In the notebook the following command is executed
+
+!$SPARK_HOME/bin/spark-submit \
+--class skymind.dsx.IrisClassifier \
+--master $MASTER \
+--files iris.txt \
+dl4j-quickstart-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+
+What is the significance $MASTER
+
+$MASTER is an environment variable and will be replaced with the url of the current master when the command executes
+Correct 
+
+
+$MASTER is an option to have the spark-submit command run in privileged mode
+
+
+
+
+In a Feed Forward Neural network the number of Nodes in the Input Layer is equal to
+
+The number of output classes
+
+The number of features in the input, in this case 784
+is selected.This is correct.
+Correct
+
+The product of (output classes * number of features)
+
+
+
+In a simple Feed Forward Neural Network the number of output nodes is equal to:
+
+The product (number of features * number of classes)
+
+The number of Classes when doing classification
+is selected.This is correct.
+Correct
+
+The number of features
+
+
+
+DL4J Fundamentals
+
+
+1.Question 1
+
+Which DeepLearning4J sub project is used to manage reading and transforming data?
+
+Pandas
+
+ans: DataVec
+
+SparkSQL
+
+
+2.Question 2
+
+When importing a Keras Model built using the Functional API into DeepLearning4J using KerasModelImport the DL4J model created will be a..
+
+ans: ComputationGraph
+
+MultiLayerNetwork
+
+
+3.Question 3
+
+A Model trained to classify events into 3 classes is trained and deployed for inference. The input is stored in an INDarray named "input". The following code generates the output.
+
+INDArray output = model.output(input);
+
+System.out.println(output);
+
+Which of the following outputs are valid, and show 90 percent probability of class 0,the first class.
+
+output[0.45, 0.32, 0.23]
+
+ans: output[0.90, 0.07, 0.03]
+
+output[0.23, 0.32, 0.45]
+
+output[0.03, 0.13, 0.92]
+
+
+4.Question 4
+
+In order to run a job in Spark using spark-submit which of the following is needed. (Choose all that apply)
+
+Java 8
+
+All code must be written in Scala
+
+ans: URL for the spark master
+
+ans: An Uberjar (also called Jar with dependencies)
+
+
+5.Question 5
+
+When building a neural network to train on Sequence data which network type is considered the best and most widely used.
+
+Convolutional Neural Network
+
+ans: Recurrent Neural Network
+
+FeedForward Neural Network
+
+
+6.Question 6
+
+Which Process takes more compute resources.
+
+ans: Training a Neural Network
+
+Deploying a Neural Network for inference
+
+
+
