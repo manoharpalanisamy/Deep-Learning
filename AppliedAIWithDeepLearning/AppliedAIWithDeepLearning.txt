@@ -1,6 +1,12 @@
 Applied AI with Deep Learning
 ------------------------------
 
+demo
+------
+https://watson-visual-recognition-duo-dev.ng.bluemix.net/
+https://natural-language-classifier-demo.ng.bluemix.net/
+
+
 
 i)  https://dataplatform.cloud.ibm.com
 ii) https://cloud.ibm.com/
@@ -404,3 +410,236 @@ Deploying a Neural Network for inference
 
 
 
+
+Anomaly Detection
+------------------
+
+1.Question 1
+
+Which statements are true with respect to unsupervised machine learning?
+
+There exists more labeled data than unlabeled
+
+Unsupervised Machine Learning requires a labeled data set in order to train the algorithm
+
+ans: There exists more unlabeled data than labeled
+
+
+2.Question 2
+
+IBM Watson Studio provides a file system underlying the jupyter notebooks of roughly 100 TeraByte for staging. Why it is not a good idea to use this as permanent data store?
+
+The staging area is very expensive to use
+
+ans: 
+This filesystem is volatile. So IBM can reset it at any point in time. Therefore, if data needs to be kept for long-term, ObjectStore is the best choice
+
+
+3) What's the input dimensionality of this layer?
+
+(How many columns/features does the input data set have)
+
+model.add(LSTM(42,input_shape=(23,5),return_sequences=True))
+
+ans: 5
+
+
+4.Question 4
+
+How many LSTM cells does this layer have?
+
+model.add(LSTM(42,input_shape=(23,5),return_sequences=True))
+
+ans: 42
+
+
+5) How many future time steps does this layer predict?
+
+(Note: this depends on the number of time-steps this layer received as input. Since Keras only supports symetrical input/output lenghts the input length determines the output length)
+
+model.add(LSTM(42,input_shape=(23,5),return_sequences=True))
+
+ans: 23
+
+
+6.Question 6
+
+Which type of neurons are the best fit for time-series data?
+
+ans: LSTM Long-Short-Term-Memory networks
+
+Feed Forward Neural Networks
+
+
+
+
+
+Sequence Classification with Keras LSTM Network
+------------------------------------------------
+
+
+1.Question 1
+What is the main characteristic of the stateful LSTM Network?
+
+Stateful LSTM updates parameters on batch n and then initiates hidden states and cell states for batch n+1, usually with zeros
+
+ans: Stateful LSTM uses batch n last output hidden states and cell states as initial states for the batch n+1
+
+
+2.Question 2
+In which case would you prefer stateless over stateful LSTM?
+
+Stateful LSTM is always a better choice then the stateless LSTM
+
+When sequences in batches are related to each other, e.g. one long time series
+
+ans: When sequences in the batches are not related to each other, e.g. represent complete sentences
+
+
+3.Question 3
+Batch-size and trainings-set size (pick two)
+
+For a stateful LSTM the batch-size must be always divisible by 8
+
+The trainings-set size must be divisible by the batch-size for stateful and stateless LSTM Network
+
+The trainings-set size must be divisible by the batch-size for the stateful LSTM only
+
+Batch-size can impact (prediction) performance of LSTM Network
+
+
+4.Question 4
+Loss Function
+
+Mean Absolute Error (MAE) is always less effective Loss-Function then Mean Squared Error (MSE)
+
+ans: Mean Absolute Error (MAE) can be more outlier resistant
+
+
+5.Question 5
+What is the difference between Cell State and Hidden State?
+
+Both are synonyms
+
+ans: LSTM CellState is its memory
+
+ans: LSTM Hidden State is equivalent to the Cell output
+
+
+6.Question 6
+
+Given is the formula to compute the number of LSTM layer parameters:
+
+PARAMETERS = 4 * LSTM outputs size * (weights LSTM inputs size + weights LSTM outputs size + 1 bias variable)
+
+Please, calculate the parameters for the Layer with the output-shape (64, 30, 10). This the first layer after the input-layer, which has the shape (64, 30, 1).
+
+Select single correct answer:
+
+ans: 480
+
+840
+
+0
+
+440
+
+
+
+
+Image Classification
+---------------------
+
+1.Question 1
+
+Which neural network layer types are most commonly used in image classicifation?
+
+LSTM
+
+ans: Convolution
+
+MaxPooling
+
+ConvPooling
+
+
+2.Question 2
+
+What is the purpose of a Dropout layer?
+
+Improve classification performance on the training set
+
+ans: Prevent over-fitting on the training set
+
+
+3.Question 3
+
+Which statements are correct? Please choose all that apply.
+
+Resnet50 is a pre-classified dataset of images
+
+Imagenet is a special Neural Network topology for classifying images
+
+ans: Resnet50 is a special Neural Network topology for classifying images
+
+ans: Imagenet is a pre-classified dataset of images
+
+
+
+NLP
+---------------
+1.Question 1
+
+Which statement is correct?
+
+Word2Vec uses a Convolutional Neural Network
+
+ans: Word2Vec is a special case of an auto-encoder
+
+
+2.Question 2
+
+What is the closes result given the following word vectors and the given calculation?
+
+cat = (1,2,3,4)
+
+bird = (2,3,4,5)
+
+flying = (1,1,1,1)
+
+swimming = (0,3,5,6)
+
+duck = (2,3,4,6)
+
+bird - flying = ?
+
+duck
+
+swimming
+
+ans: cat
+
+
+3.Question 3
+
+Consider a vocabulary size of 1.000.000 words, a 100 dimensional Embedding in a ternary (three output classes) classification task - which of the following neural network configuration works best?
+
+i -> number of input layer neurons
+
+h -> number of hidden layer neurons
+
+o -> number of output layer neurons
+
+a -> activation function of output layer (softmax)
+
+ans: i = 1.000.000, h = 100, o = 3, a = softmax
+
+i =100 , h = 1.000.000, o = 3, a = softmax
+
+i =100 , h = 1.000.000, o = 3, a = relu
+
+i = 3, h = 1.000.000, o = 100, a = relu
+
+i = 1.000.000, h = 100, o = 3, a = relu
+
+i = 3, h = 1.000.000, o = 100, a = softmax
