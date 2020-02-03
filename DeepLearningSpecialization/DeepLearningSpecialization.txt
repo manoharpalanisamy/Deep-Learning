@@ -1,5 +1,11 @@
-Deep Learning Specialization on Coursera
------------------------------------------
+Deep Learning Specialization on Coursera        Deep Learning For Coders
+----------------------------------------- 
+
+Kaggle
+--------
+https://towardsdatascience.com/kaggle-vs-colab-faceoff-which-free-gpu-provider-is-tops-d4f0cd625029
+
+
 google colab
 -------------
 Google colab is a free cloud service (jupyter as service) with GPU and TPU support
@@ -42,3 +48,4 @@ introduction-neural-networks-deep-learning/
 3) https://medium.com/@pdquant/all-the-backpropagation-derivatives-d5275f727f60
 
 
+https://www.quora.com/What-is-the-best-course-on-deep-learning
