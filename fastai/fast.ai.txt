@@ -1,0 +1,37 @@
+Kernel
+-------
+
+Note: You will sometimes hear people talking about the Notebook 'kernel'. 
+The 'kernel' is just the Python engine that performs the computations for you.
+
+
+https://course.fast.ai/
+
+https://www.fast.ai/2017/11/16/what-you-need/
+
+
+Platform
+---------
+1) https://www.kaggle.com/ (free gpu 6hr)
+2) https://www.paperspace.com (free 8gpu 6hr)
+3) https://colab.research.google.com (free 12hr)
+
+
+Notes:
+------
+kaggle
+-------
+1) https://course.fast.ai/start_kaggle.html
+2) https://towardsdatascience.comannouncing-fast-ai-part-1-now-available-as-kaggle-kernels-8ef4ca3b9ce6
+3) https://www.kaggle.com/general/63077#368995
+
+colab
+------
+1) https://course.fast.ai/start_colab.html
+2) https://medium.com/@prajwal.prashanth22/google-colab-drive-as-persistent-storage-for-long-training-runs-cb82bc1d5b71
+
+
+why to choose resnet
+-----------------------
+
+1) https://dawn.cs.stanford.edu/benchmark/#imagenet
