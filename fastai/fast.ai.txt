@@ -22,8 +22,8 @@ Notes:
 kaggle
 -------
 1) https://course.fast.ai/start_kaggle.html
-2) https://towardsdatascience.comannouncing-fast-ai-part-1-now-available-as-kaggle-kernels-8ef4ca3b9ce6
-3) https://www.kaggle.com/general/63077#368995
+2) https://github.com/fastai/course-v3/blob/master/docs/start_kaggle.md
+3) https://towardsdatascience.comannouncing-fast-ai-part-1-now-available-as-kaggle-kernels-8ef4ca3b9ce6
 
 colab
 ------
@@ -33,5 +33,20 @@ colab
 
 why to choose resnet
 -----------------------
-
 1) https://dawn.cs.stanford.edu/benchmark/#imagenet
+
+
+How (and why) to create a good validation set
+---------------------------------------------
+1) https://www.fast.ai/2017/11/13/validation-sets/ 
+2) https://deeplizard.com/learn/video/Zi-0rlM4RDs
+3) https://www.researchgate.net/post/what_is_the_difference_between_validation_set_and_test_set
+
+if the results on the training data are really good, but the results on the validation data are lagging behind, then our model is overfitting.
+
+
+data
+-----
+Unlabeled data consists of data which is either taken from nature or created by human to explore the scientific patterns behind it. Some examples of unlabeled data might include photos, audio recordings, videos, news articles, tweets, x-rays, etc. The main concept is there is no explanation, label, tag, class or name for the features in data.
+
+Labeled data consists of unlabeled data with a description, label or name of features in the data. E.g. In a labeled image dataset, an image is labeled as it is a cat’s photo and it’s a dog’s photo
