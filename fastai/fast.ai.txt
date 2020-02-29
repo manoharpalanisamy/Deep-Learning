@@ -79,3 +79,9 @@ Unlabeled data consists of data which is either taken from nature or created by 
 Labeled data consists of unlabeled data with a description, label or name of features in the data. E.g. In a labeled image dataset, an image is labeled as it is a cat’s photo and it’s a dog’s photo
 
 ----------------------------------------------------------------------------------------------
+
+
+Label the dataset
+------------------
+
+https://platform.ai/
